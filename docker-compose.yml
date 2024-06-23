@@ -1,0 +1,9 @@
+# docker-compose.yml
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "3325:3325"
+    volumes:
+      - ./public:/usr/src/app/public   # Mount local 'public' directory to container
